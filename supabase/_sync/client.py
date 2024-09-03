@@ -1,8 +1,6 @@
 import re
 from typing import Any, Dict, List, Optional, Union
 
-from gotrue import SyncMemoryStorage
-from gotrue.types import AuthChangeEvent, Session
 from httpx import Timeout
 from postgrest import (
     SyncPostgrestClient,
@@ -13,6 +11,8 @@ from postgrest.constants import DEFAULT_POSTGREST_CLIENT_TIMEOUT
 from realtime import RealtimeChannelOptions, SyncRealtimeChannel, SyncRealtimeClient
 from storage3 import SyncStorageClient
 from storage3.constants import DEFAULT_TIMEOUT as DEFAULT_STORAGE_CLIENT_TIMEOUT
+from supabase_auth import SyncMemoryStorage
+from supabase_auth.types import AuthChangeEvent, Session
 from supafunc import SyncFunctionsClient
 
 from ..lib.client_options import ClientOptions

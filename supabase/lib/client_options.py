@@ -1,10 +1,10 @@
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional, Union
 
-from gotrue import AuthFlowType, SyncMemoryStorage, SyncSupportedStorage
 from httpx import Timeout
 from postgrest.constants import DEFAULT_POSTGREST_CLIENT_TIMEOUT
 from storage3.constants import DEFAULT_TIMEOUT as DEFAULT_STORAGE_CLIENT_TIMEOUT
+from supabase_auth import AuthFlowType, SyncMemoryStorage, SyncSupportedStorage
 from supafunc.utils import DEFAULT_FUNCTION_CLIENT_TIMEOUT
 
 from ..version import __version__
